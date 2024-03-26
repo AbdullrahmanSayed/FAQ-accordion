@@ -1,0 +1,84 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color:  hsl(275, 100%, 97%);
+    z-index: -12;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    position: relative; /* Ensure the container is positioned relatively */
+    
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set the width to cover 60% of the page */
+    height: 40%; /* Set the height of the background to cover 40% of the top of the page */
+     /* Move the background behind other content */
+    background-color: blue; /* Set the background color to blue */
+    background-image: url(images/background-pattern-desktop.svg); /* Replace 'images/background-pattern-desktop.svg' with the URL of your background image */
+    background-size: cover;
+    background-position: center top; /* Set background position */
+}
+
+.FAQ {
+    
+    padding: 20px;
+    display: flex;
+   z-index: 12;
+    flex-direction: column;
+    
+    background-color: #fff; /* Set background color of content area */
+    border-radius: 10px;
+    margin: auto;
+    
+    max-width: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.title
+{
+    margin-bottom: 20px;
+    
+}
+.title img
+{
+    width: 23px;
+}
+.FAQ h3 {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.block-box
+{
+    margin-bottom: 20px;
+    height: 100%;
+   
+}
+.block-box .content
+{
+    padding-bottom: 20px;
+}
+.FAQ h3 .plus
+{
+    width: 29px;
+}
+.FAQ h3 .minus
+{
+    display: none;
+    width: 29px;
+}
